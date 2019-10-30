@@ -3,7 +3,7 @@
   <display-name>mapping</display-name>
   <welcome-file-list>
 
-    <welcome-file>/WEB-INF/index.jsp</welcome-file> <!--index.jsp를 /WEB-INF/index.jsp로 바꿔줌 -->
+    <welcome-file>/WEB-INF/index.jsp</welcome-file> <!--index.jsp를 /WEB-INF/index.jsp로 바꿔줌 , 서버 껐다켜기-->
 
   </welcome-file-list>
   
@@ -13,6 +13,6 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>TestController</servlet-name>
-  	<url-pattern>/test/*</url-pattern>
+  	<url-pattern>/test/*</url-pattern> <!-- url맵핑이 /test/*로 되어있음 -->
   </servlet-mapping>	
 </web-app>
