@@ -3,7 +3,7 @@
   <display-name>mapping</display-name>
   <welcome-file-list>
 
-    <welcome-file>/WEB-INF/index.jsp</welcome-file> <!--index.jsp를 /WEB-INF/index.jsp로 바꿔줌 , 서버 껐다켜기-->
+    <welcome-file>/WEB-INF/view/index.jsp</welcome-file> <!--index.jsp를 /WEB-INF/index.jsp로 바꿔줌 , 서버 껐다켜기-->
 
   </welcome-file-list>
   
@@ -14,5 +14,14 @@
   <servlet-mapping>
   	<servlet-name>TestController</servlet-name>
   	<url-pattern>/test/*</url-pattern> <!-- url맵핑이 /test/*로 되어있음 -->
+  </servlet-mapping>	
+  
+    <servlet>
+  	<servlet-name>URIController</servlet-name>
+  	<servlet-class>com.mapp.bdi.controller.URIController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>URIController</servlet-name>
+  	<url-pattern>/uri/*</url-pattern> <!-- uri로 시작하는것들은 다 uri컽ㅌ츠롤러로 가게된다 -->
   </servlet-mapping>	
 </web-app>

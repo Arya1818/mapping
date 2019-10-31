@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <a href="/test/asdfasdf">TestController로 고고씽</a> <!-- 겟방식, url맵핑이 /test/*로 되어있기때문에 경로를 이렇게 줌 -->
+  <a href="/test/list">TestController로 고고씽</a> <!-- 겟방식, url맵핑이 /test/*로 되어있기때문에 경로를 이렇게 줌 -->
 
 <!--  
 

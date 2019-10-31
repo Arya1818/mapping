@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,9 +9,14 @@
 </head>
 <body>
 <%
-//request.setAttribute("msg","하이");
-String msg = (String)request.getAttribute("msg");
+List<String> list = (List<String>)request.getAttribute("list");
+for(String str : list){
 %>
-index에서 온 메세지 : <%=msg %>
+
+<%=str %>
+
+<%
+}
+%>
 </body>
 </html>
